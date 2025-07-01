@@ -1832,7 +1832,7 @@ server.tool(
         const createdDate = `\n  📅 Created: ${todo.created_at}`;
         const updatedDate = todo.updated_at !== todo.created_at ? `\n  🔄 Updated: ${todo.updated_at}` : '';
         
-        return `${status} [${todo.contact_name}] ${todo.todo_text}${targetDate}${createdDate}${updatedDate}`;
+        return `${status} [ID: ${todo.id}] [${todo.contact_name}] ${todo.todo_text}${targetDate}${createdDate}${updatedDate}`;
       }).join('\n\n');
 
       let filterDescription = '';
